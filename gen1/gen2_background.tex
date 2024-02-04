@@ -1,0 +1,32 @@
+
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=1,
+angle=0,
+position=current page.north,
+vshift=-0.5\paperheight,
+contents={
+    \begin{minipage}[t][\paperheight][t]{\paperwidth}
+    \centering%
+    \vspace{0.5cm}%
+    \begin{minipage}[t]{0.9\paperwidth}%
+        \begin{adjustwidth}{0cm}{0cm}%
+        {\fontsize{15}{5}\selectfont \textbf{Genesis 2}} \hfill Note Page % REPLACE
+        \medskip%
+        \hrule height 1pt
+        \end{adjustwidth}%
+    \end{minipage}
+    \begin{minipage}[b][19.7cm][b]{0.7\textwidth}%
+        \include{gen_book_margin}%    % REPLACE
+    \end{minipage}%
+    \begin{minipage}[b]{0.3\textwidth}%
+        \begin{adjustwidth}{0.5cm}{0.5cm}
+            \Repeat{38}{\myTodoLineGray}
+            \vspace{5mm}
+        \end{adjustwidth}%
+    \end{minipage}%
+    \end{minipage}%
+}
+}
+    

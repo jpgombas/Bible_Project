@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 FEB 2024 03:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 FEB 2024 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**gen1
+**gen1.tex
 (./gen1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
@@ -589,37 +589,34 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \myLenLineThicknessDefault=\skip54
 \myLenLineHeightButLine=\skip55
 )
-
-LaTeX Warning: \include should only be used after \begin{document} on input lin
-e 3.
-
-(./gen1_background.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box66
 )
-(./gen1.aux (./book_margin_gen.aux) (./book_margin_gen.aux))
+(./gen1.aux (./gen1_background.aux) (./gen_book_margin.aux)
+(./gen_book_margin.aux) (./gen2_background.aux) (./gen_book_margin.aux)
+(./gen_book_margin.aux))
 \openout1 = `gen1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -677,13 +674,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 7.
+Package hyperref Info: Link coloring ON on input line 5.
 
 (./gen1.out) (./gen1.out)
 \@outlinefile=\write4
 \openout4 = `gen1.out'.
 
- (./gen1_chapterbar.tex)
+\openout2 = `gen1_background.aux'.
+
+ (./gen1_background.tex) (./gen1_chapterbar.tex)
 Overfull \hbox (2.08734pt too wide) in paragraph at lines 25--9
 [][]  
  []
@@ -999,6 +998,9 @@ Overfull \hbox (2.70586pt too wide) has occurred while \output is active
 
 
 
+
+
+
 ]
 \openout2 = `gen_book_margin.aux'.
 
@@ -1297,7 +1299,614 @@ Overfull \hbox (2.70586pt too wide) has occurred while \output is active
 
 
 
-] (./gen1.aux (./gen_book_margin.aux) (./gen_book_margin.aux))
+]
+\openout2 = `gen2_background.aux'.
+
+ (./gen2_background.tex) (./gen2_chapterbar.tex)
+Overfull \hbox (2.08734pt too wide) in paragraph at lines 25--20
+[][]  
+ []
+
+(./gen2_txt.tex)
+\openout2 = `gen_book_margin.aux'.
+
+ (./gen_book_margin.tex
+Overfull \hbox (3.02531pt too wide) has occurred while \output is active
+ []|[]\OT1/cmr/m/n/5 GEN[]| 
+ []
+
+
+Overfull \hbox (2.8239pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EXO[][]| 
+ []
+
+
+Overfull \hbox (2.01138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 LEV[][]| 
+ []
+
+
+Overfull \hbox (4.20589pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 NUM[][]| 
+ []
+
+
+Overfull \hbox (2.87946pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 DEU[][]| 
+ []
+
+
+Overfull \hbox (0.80305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JOS[][]| 
+ []
+
+
+Overfull \hbox (2.10168pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JDG[][]| 
+ []
+
+
+Overfull \hbox (2.8239pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 RUT[][]| 
+ []
+
+
+Overfull \hbox (0.51138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1SA[][]| 
+ []
+
+
+Overfull \hbox (0.51138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2SA[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1CH[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2CH[][]| 
+ []
+
+
+Overfull \hbox (1.90028pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EZR[][]| 
+ []
+
+
+Overfull \hbox (2.76141pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 NEH[][]| 
+ []
+
+
+Overfull \hbox (1.49748pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EST[][]| 
+ []
+
+
+Overfull \hbox (1.72668pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JOB[][]| 
+ []
+
+
+Overfull \hbox (1.60861pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PSA[][]| 
+ []
+
+
+Overfull \hbox (2.76834pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PRO[][]| 
+ []
+
+
+Overfull \hbox (2.53915pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ECC[][]| 
+ []
+
+
+Overfull \hbox (2.27531pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 SNG[][]| 
+ []
+
+
+Overfull \hbox (1.26138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JER[][]| 
+ []
+
+
+Overfull \hbox (3.45586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 LAM[][]| 
+ []
+
+
+Overfull \hbox (2.12944pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EZK[][]| 
+ []
+
+
+Overfull \hbox (3.10863pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 DAN[][]| 
+ []
+
+
+Overfull \hbox (2.24753pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HOS[][]| 
+ []
+
+
+Overfull \hbox (1.20583pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JOL[][]| 
+ []
+
+
+Overfull \hbox (4.442pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 AMO[][]| 
+ []
+
+
+Overfull \hbox (3.17116pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 OBA[][]| 
+ []
+
+
+Overfull \hbox (1.95586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JON[][]| 
+ []
+
+
+Overfull \hbox (1.66414pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MIC[][]| 
+ []
+
+
+Overfull \hbox (4.20589pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 NAM[][]| 
+ []
+
+
+Overfull \hbox (2.93504pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HAB[][]| 
+ []
+
+
+Overfull \hbox (1.55304pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ZEP[][]| 
+ []
+
+
+Overfull \hbox (3.25449pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HAG[][]| 
+ []
+
+
+Overfull \hbox (1.84471pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ZEC[][]| 
+ []
+
+
+Overfull \hbox (3.45586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MAL[][]| 
+ []
+
+
+Overfull \hbox (3.5739pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MAT[][]| 
+ []
+
+
+Overfull \hbox (4.32393pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MRK[][]| 
+ []
+
+
+Overfull \hbox (2.58778pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 LUK[][]| 
+ []
+
+
+Overfull \hbox (1.71974pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JHN[][]| 
+ []
+
+
+Overfull \hbox (2.76833pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ACT[][]| 
+ []
+
+
+Overfull \hbox (4.21281pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ROM[][]| 
+ []
+
+
+Overfull \hbox (1.78917pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1CO[][]| 
+ []
+
+
+Overfull \hbox (1.78917pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2CO[][]| 
+ []
+
+
+Overfull \hbox (2.67809pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 GAL[][]| 
+ []
+
+
+Overfull \hbox (2.35861pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EPH[][]| 
+ []
+
+
+Overfull \hbox (2.35861pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PHP[][]| 
+ []
+
+
+Overfull \hbox (2.53917pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 COL[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1TH[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2TH[][]| 
+ []
+
+
+Overfull \hbox (0.51134pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 TIT[][]| 
+ []
+
+
+Overfull \hbox (3.80309pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PHM[][]| 
+ []
+
+
+Overfull \hbox (2.53224pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HEB[][]| 
+ []
+
+
+Overfull \hbox (0.56694pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JAS[][]| 
+ []
+
+
+Overfull \hbox (1.15025pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1PT[][]| 
+ []
+
+
+Overfull \hbox (1.15025pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2PT[][]| 
+ []
+
+
+Overfull \hbox (1.31694pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JUE[][]| 
+ []
+
+
+Overfull \hbox (2.70586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 REV[][]| 
+ []
+
+) [3
+
+
+
+
+
+
+]
+\openout2 = `gen_book_margin.aux'.
+
+ (./gen_book_margin.tex
+Overfull \hbox (3.02531pt too wide) has occurred while \output is active
+ []|[]\OT1/cmr/m/n/5 GEN[]| 
+ []
+
+
+Overfull \hbox (2.8239pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EXO[][]| 
+ []
+
+
+Overfull \hbox (2.01138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 LEV[][]| 
+ []
+
+
+Overfull \hbox (4.20589pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 NUM[][]| 
+ []
+
+
+Overfull \hbox (2.87946pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 DEU[][]| 
+ []
+
+
+Overfull \hbox (0.80305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JOS[][]| 
+ []
+
+
+Overfull \hbox (2.10168pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JDG[][]| 
+ []
+
+
+Overfull \hbox (2.8239pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 RUT[][]| 
+ []
+
+
+Overfull \hbox (0.51138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1SA[][]| 
+ []
+
+
+Overfull \hbox (0.51138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2SA[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1CH[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2CH[][]| 
+ []
+
+
+Overfull \hbox (1.90028pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EZR[][]| 
+ []
+
+
+Overfull \hbox (2.76141pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 NEH[][]| 
+ []
+
+
+Overfull \hbox (1.49748pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EST[][]| 
+ []
+
+
+Overfull \hbox (1.72668pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JOB[][]| 
+ []
+
+
+Overfull \hbox (1.60861pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PSA[][]| 
+ []
+
+
+Overfull \hbox (2.76834pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PRO[][]| 
+ []
+
+
+Overfull \hbox (2.53915pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ECC[][]| 
+ []
+
+
+Overfull \hbox (2.27531pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 SNG[][]| 
+ []
+
+
+Overfull \hbox (1.26138pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JER[][]| 
+ []
+
+
+Overfull \hbox (3.45586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 LAM[][]| 
+ []
+
+
+Overfull \hbox (2.12944pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EZK[][]| 
+ []
+
+
+Overfull \hbox (3.10863pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 DAN[][]| 
+ []
+
+
+Overfull \hbox (2.24753pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HOS[][]| 
+ []
+
+
+Overfull \hbox (1.20583pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JOL[][]| 
+ []
+
+
+Overfull \hbox (4.442pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 AMO[][]| 
+ []
+
+
+Overfull \hbox (3.17116pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 OBA[][]| 
+ []
+
+
+Overfull \hbox (1.95586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JON[][]| 
+ []
+
+
+Overfull \hbox (1.66414pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MIC[][]| 
+ []
+
+
+Overfull \hbox (4.20589pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 NAM[][]| 
+ []
+
+
+Overfull \hbox (2.93504pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HAB[][]| 
+ []
+
+
+Overfull \hbox (1.55304pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ZEP[][]| 
+ []
+
+
+Overfull \hbox (3.25449pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HAG[][]| 
+ []
+
+
+Overfull \hbox (1.84471pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ZEC[][]| 
+ []
+
+
+Overfull \hbox (3.45586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MAL[][]| 
+ []
+
+
+Overfull \hbox (3.5739pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MAT[][]| 
+ []
+
+
+Overfull \hbox (4.32393pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 MRK[][]| 
+ []
+
+
+Overfull \hbox (2.58778pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 LUK[][]| 
+ []
+
+
+Overfull \hbox (1.71974pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JHN[][]| 
+ []
+
+
+Overfull \hbox (2.76833pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ACT[][]| 
+ []
+
+
+Overfull \hbox (4.21281pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 ROM[][]| 
+ []
+
+
+Overfull \hbox (1.78917pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1CO[][]| 
+ []
+
+
+Overfull \hbox (1.78917pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2CO[][]| 
+ []
+
+
+Overfull \hbox (2.67809pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 GAL[][]| 
+ []
+
+
+Overfull \hbox (2.35861pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 EPH[][]| 
+ []
+
+
+Overfull \hbox (2.35861pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PHP[][]| 
+ []
+
+
+Overfull \hbox (2.53917pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 COL[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1TH[][]| 
+ []
+
+
+Overfull \hbox (1.55305pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2TH[][]| 
+ []
+
+
+Overfull \hbox (0.51134pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 TIT[][]| 
+ []
+
+
+Overfull \hbox (3.80309pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 PHM[][]| 
+ []
+
+
+Overfull \hbox (2.53224pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 HEB[][]| 
+ []
+
+
+Overfull \hbox (0.56694pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JAS[][]| 
+ []
+
+
+Overfull \hbox (1.15025pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1PT[][]| 
+ []
+
+
+Overfull \hbox (1.15025pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2PT[][]| 
+ []
+
+
+Overfull \hbox (1.31694pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 JUE[][]| 
+ []
+
+
+Overfull \hbox (2.70586pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 REV[][]| 
+ []
+
+) [4
+
+
+
+] (./gen1.aux (./gen1_background.aux) (./gen_book_margin.aux)
+(./gen_book_margin.aux) (./gen2_background.aux) (./gen_book_margin.aux)
+(./gen_book_margin.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.0pt have occurred.
@@ -1306,13 +1915,13 @@ Package rerunfilecheck Info: File `gen1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19829 strings out of 476025
- 380019 string characters out of 5790017
+ 19906 strings out of 476025
+ 382236 string characters out of 5790017
  1903388 words of memory out of 5000000
- 39931 multiletter control sequences out of 15000+600000
+ 39978 multiletter control sequences out of 15000+600000
  513119 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,24n,123p,463b,1017s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,24n,123p,467b,1015s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{dummy} has been referenced but does not exist, repl
 aced by a fixed one
@@ -1321,10 +1930,10 @@ aced by a fixed one
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on gen1.pdf (2 pages, 65240 bytes).
+Output written on gen1.pdf (4 pages, 79501 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 4 named destinations out of 1000 (max. 500000)
+ 892 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 6 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
