@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 FEB 2024 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 FEB 2024 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,13 +974,13 @@ Overfull \hbox (0.56694pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 1PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1PE[][]| 
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 2PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2PE[][]| 
  []
 
 
@@ -1276,13 +1276,13 @@ Overfull \hbox (0.56694pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 1PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1PE[][]| 
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 2PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2PE[][]| 
  []
 
 
@@ -1303,7 +1303,7 @@ Overfull \hbox (2.70586pt too wide) has occurred while \output is active
 \openout2 = `gen2_background.aux'.
 
  (./gen2_background.tex) (./gen2_chapterbar.tex)
-Overfull \hbox (2.08734pt too wide) in paragraph at lines 25--20
+Overfull \hbox (2.08734pt too wide) in paragraph at lines 25--18
 [][]  
  []
 
@@ -1581,13 +1581,13 @@ Overfull \hbox (0.56694pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 1PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1PE[][]| 
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 2PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2PE[][]| 
  []
 
 
@@ -1881,13 +1881,13 @@ Overfull \hbox (0.56694pt too wide) has occurred while \output is active
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 1PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 1PE[][]| 
  []
 
 
-Overfull \hbox (1.15025pt too wide) has occurred while \output is active
- []|[][]\OT1/cmr/m/n/5 2PT[][]| 
+Overfull \hbox (0.85858pt too wide) has occurred while \output is active
+ []|[][]\OT1/cmr/m/n/5 2PE[][]| 
  []
 
 
@@ -1930,7 +1930,7 @@ aced by a fixed one
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on gen1.pdf (4 pages, 79501 bytes).
+Output written on gen1.pdf (4 pages, 79485 bytes).
 PDF statistics:
  892 PDF objects out of 1000 (max. 8388607)
  314 compressed objects within 4 object streams

@@ -1,14 +1,15 @@
 from book_def import bib_dict
+from get_chapter import getChapterText
 
 # Write the tex file
-def write_tex(book, chapter):
+def write_bookChapter(book, chapter):
     text = ""
-    text += "\\begin{document}\n"
-    # text += write_background(book)
-    text += write_book_margin(book)
-    text += write_chapterbar(book, chapter)
-    # text += write_text(book, chapter)
-    text += "\\end{document}"
+    text += "\\include{"+book.lower()+str(chapter)+"_background}\n\n"
+    text += "\\input{"+book.lower()+str(chapter)+"_chapterbar}\n\n"
+    text += "\\medskip\n"
+    text += "\\input{"+book.lower()+str(chapter)+"_txt}\n\n"
+    text += "\\newpage\n"
+
     return text
 
 # Book margin writer
@@ -70,11 +71,10 @@ contents={
     return text
 
 # Chapterbar writer
-def write_chapterbar(book, chapter, chapterlimit=50):
+def write_chapterbar(translation, book, chapter):
+    chapterlimit = len(getChapterText(translation, book, chapter)['text'])
     text = "\\fbox{%\n"
     text += "\\begin{tabularx}{8.7cm}{*{11}{C}}\n"
-
-
     # Calculate the start and end values for the range
     start = max(1, chapter - 5)
     end = start + 11
@@ -99,5 +99,12 @@ def write_chapterbar(book, chapter, chapterlimit=50):
     return text
 
 # Text writer
-
-# Mainfile writer
+def write_text(translation, book, chapter):
+    text_data = getChapterText(translation,book,chapter)
+    text = ""
+    for i, verse in enumerate(text_data['text']):
+        if i==0:
+            text+=verse['text']+"\n"
+        else:
+            text+="$^{"+str(i+1)+"}$ "+verse['text']+"\n"
+    return text
