@@ -1,10 +1,10 @@
 from book_def import bib_dict
-from get_chapter import getChapterText
+from get_chapter import getNChapters, getChapterText
 
 # Write the tex file
 def write_bookChapter(book, chapter):
     text = ""
-    text += "\\include{"+book.lower()+str(chapter)+"_background}\n\n"
+    text += "\\hypertarget{"+book.lower()+str(chapter)+"}{\\include{"+book.lower()+str(chapter)+"_background}}\n\n"
     text += "\\input{"+book.lower()+str(chapter)+"_chapterbar}\n\n"
     text += "\\medskip\n"
     text += "\\input{"+book.lower()+str(chapter)+"_txt}\n\n"
@@ -72,7 +72,7 @@ contents={
 
 # Chapterbar writer
 def write_chapterbar(translation, book, chapter):
-    chapterlimit = len(getChapterText(translation, book, chapter)['text'])
+    chapterlimit = getNChapters(translation, book) + 1
     text = "\\fbox{%\n"
     text += "\\begin{tabularx}{8.7cm}{*{11}{C}}\n"
     # Calculate the start and end values for the range
@@ -86,13 +86,15 @@ def write_chapterbar(translation, book, chapter):
     chapter_range = range(start, end) 
     
     for i in chapter_range:
-        if i == int(chapter):
+        if chapter == chapterlimit-1 and i == chapterlimit-1:
+            text += "\t\\cellcolor{black}{\\textcolor{white}{"+str(i)+"}}\n"
+        elif i == int(chapter):
             text += "\t\\cellcolor{black}{\\textcolor{white}{"+str(i)+"}}\n"
             text += "\t&\n"
         elif i==chapter_range[-1]:
-            text += "\t\\hyperlink{dummy}{"+str(i)+"}\n"
+            text += "\t\\hyperlink{"+book.lower()+str(i)+"}{"+str(i)+"}\n"
         else:
-            text += "\t\\hyperlink{dummy}{"+str(i)+"}\n"
+            text += "\t\\hyperlink{"+book.lower()+str(i)+"}{"+str(i)+"}\n"
             text += "\t&\n"
 
     text += "\\end{tabularx}\n}"
@@ -107,4 +109,15 @@ def write_text(translation, book, chapter):
             text+=verse['text']+"\n"
         else:
             text+="$^{"+str(i+1)+"}$ "+verse['text']+"\n"
+    return text
+
+def write_tex_main(translation, book):
+    nchapters = getNChapters(translation, book)
+    text = ""
+    text += "\\include{preamble}\n\n"
+    text += "\\begin{document}\n\n"
+    for i in range(1, nchapters+1):
+        text += write_bookChapter(book, i)
+    text += "\\end{document}"
+    
     return text

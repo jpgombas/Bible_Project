@@ -11,4 +11,16 @@ def getChapterText(translation, book, chapter):
         return 
     # open the file
     with open(path, 'r') as file:
-        return json.loads(file.read())['text'][int(chapter)]
+        return json.loads(file.read())['text'][int(chapter)-1]
+    
+def getNChapters(translation, book):
+    # check for book in OT and NT directory
+    if os.path.exists('holybooks/OT/' + book + '/' + translation + '.json'):
+        path = 'holybooks/OT/' + book + '/' + translation + '.json'
+    elif os.path.exists('holybooks/NT/' + book + '/' + translation + '.json'):
+        path = 'holybooks/NT/' + book + '/' + translation + '.json'
+    else:
+        return 
+    # open the file
+    with open(path, 'r') as file:
+        return len(json.loads(file.read())['text'])
