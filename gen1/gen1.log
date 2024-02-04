@@ -1,11 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 FEB 2024 02:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.5)  4 FEB 2024 03:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**trial.tex
-(./trial.tex
+**gen1
+(./gen1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 1.
+
+(./preamble.tex
 (/usr/local/texlive/2023/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
@@ -583,33 +588,38 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 ))
 \myLenLineThicknessDefault=\skip54
 \myLenLineHeightButLine=\skip55
+)
 
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 3.
+
+(./gen1_background.tex)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box66
 )
-(./trial.aux (./book_margin_gen.aux) (./book_margin_gen.aux))
-\openout1 = `trial.aux'.
+(./gen1.aux (./book_margin_gen.aux) (./book_margin_gen.aux))
+\openout1 = `gen1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -667,24 +677,29 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 78.
+Package hyperref Info: Link coloring ON on input line 7.
 
-(./trial.out) (./trial.out)
+(./gen1.out) (./gen1.out)
 \@outlinefile=\write4
-\openout4 = `trial.out'.
+\openout4 = `gen1.out'.
 
+ (./gen1_chapterbar.tex)
+Overfull \hbox (2.08734pt too wide) in paragraph at lines 25--9
+[][]  
+ []
 
+(./gen1_txt.tex)
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 139.
+(Font)              size <14.4> substituted on input line 12.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 139.
+(Font)              size <14.4> substituted on input line 12.
 
-\openout2 = `book_margin_gen.aux'.
+\openout2 = `gen_book_margin.aux'.
 
-(./book_margin_gen.tex
+(./gen_book_margin.tex
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2> not available
 (Font)              size <5> substituted on input line 1.
@@ -985,10 +1000,10 @@ Overfull \hbox (2.70586pt too wide) has occurred while \output is active
 
 
 ]
-\openout2 = `book_margin_gen.aux'.
+\openout2 = `gen_book_margin.aux'.
 
 
-(./book_margin_gen.tex
+(./gen_book_margin.tex
 Overfull \hbox (3.02531pt too wide) has occurred while \output is active
  []|[]\OT1/cmr/m/n/5 GEN[]| 
  []
@@ -1282,22 +1297,22 @@ Overfull \hbox (2.70586pt too wide) has occurred while \output is active
 
 
 
-] (./trial.aux (./book_margin_gen.aux) (./book_margin_gen.aux))
+] (./gen1.aux (./gen_book_margin.aux) (./gen_book_margin.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.0pt have occurred.
 
-Package rerunfilecheck Info: File `trial.out' has not changed.
+Package rerunfilecheck Info: File `gen1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19802 strings out of 476025
- 379527 string characters out of 5790017
+ 19829 strings out of 476025
+ 380019 string characters out of 5790017
  1903388 words of memory out of 5000000
- 39917 multiletter control sequences out of 15000+600000
+ 39931 multiletter control sequences out of 15000+600000
  513119 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,24n,118p,445b,1017s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,24n,123p,463b,1017s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{dummy} has been referenced but does not exist, repl
 aced by a fixed one
@@ -1306,7 +1321,7 @@ aced by a fixed one
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on trial.pdf (2 pages, 65240 bytes).
+Output written on gen1.pdf (2 pages, 65240 bytes).
 PDF statistics:
  462 PDF objects out of 1000 (max. 8388607)
  168 compressed objects within 2 object streams
