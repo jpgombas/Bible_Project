@@ -6,7 +6,6 @@ def write_bookChapter(book, chapter):
     text = ""
     text += "\\hypertarget{"+book.lower()+str(chapter)+"}{\\include{"+book.lower()+str(chapter)+"_background}}\n\n"
     text += "\\input{"+book.lower()+str(chapter)+"_chapterbar}\n\n"
-    text += "\\medskip\n"
     text += "\\input{"+book.lower()+str(chapter)+"_txt}\n\n"
     text += "\\newpage\n"
 
@@ -50,7 +49,7 @@ contents={
     \vspace{0.5cm}%
     \begin{minipage}[t]{0.9\paperwidth}%
         \begin{adjustwidth}{0cm}{0cm}%
-        {\fontsize{15}{5}\selectfont \textbf{''' + bib_dict[book] + ''' ''' + str(chapter) + '''}} \\hfill Note Page % REPLACE
+        {\fontsize{15}{5}\selectfont \textbf{''' + bib_dict[book] + ''' ''' + str(chapter) + '''}} \\hfill \hyperlink{'''+book.lower()+str(chapter)+'''ref}{Note Page}
         \medskip%
         \hrule height 1pt
         \end{adjustwidth}%
@@ -73,8 +72,8 @@ contents={
 # Chapterbar writer
 def write_chapterbar(translation, book, chapter):
     chapterlimit = getNChapters(translation, book) + 1
-    text = "\\fbox{%\n"
-    text += "\\begin{tabularx}{8.7cm}{*{11}{C}}\n"
+    text = ""
+    text += "\\begin{tabularx}{\\linewidth}{|*{11}{X}|}\n\\hline\n"
     # Calculate the start and end values for the range
     start = max(1, chapter - 5)
     end = start + 11
@@ -87,17 +86,15 @@ def write_chapterbar(translation, book, chapter):
     
     for i in chapter_range:
         if chapter == chapterlimit-1 and i == chapterlimit-1:
-            text += "\t\\cellcolor{black}{\\textcolor{white}{"+str(i)+"}}\n"
+            text += "\\cellcolor{black}{\\textcolor{white}{"+str(i)+"}}"
         elif i == int(chapter):
-            text += "\t\\cellcolor{black}{\\textcolor{white}{"+str(i)+"}}\n"
-            text += "\t&\n"
+            text += "\\cellcolor{black}{\\textcolor{white}{"+str(i)+"}} & "
         elif i==chapter_range[-1]:
-            text += "\t\\hyperlink{"+book.lower()+str(i)+"}{"+str(i)+"}\n"
+            text += "\\hyperlink{"+book.lower()+str(i)+"}{"+str(i)+"}"
         else:
-            text += "\t\\hyperlink{"+book.lower()+str(i)+"}{"+str(i)+"}\n"
-            text += "\t&\n"
+            text += "\\hyperlink{"+book.lower()+str(i)+"}{"+str(i)+"} & "
 
-    text += "\\end{tabularx}\n}"
+    text += "\\\\\n\\hline\n\\end{tabularx}"
     return text
 
 # Text writer
@@ -118,6 +115,44 @@ def write_tex_main(translation, book):
     text += "\\begin{document}\n\n"
     for i in range(1, nchapters+1):
         text += write_bookChapter(book, i)
+
+    for i in range(1, nchapters+1):
+        text += "\\input{"+book.lower()+""+str(i)+"_reflection}\n\n"
+        text += "\\newpage\n"
+
     text += "\\end{document}"
     
+    return text
+
+def write_reflection_page(book, chapter):
+    text = r'''
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=1,
+angle=0,
+position=current page.north,
+vshift=-0.5\paperheight,
+contents={
+    \begin{minipage}[t][\paperheight][t]{\paperwidth}
+    \centering%
+    \vspace{0.5cm}%
+    \begin{minipage}[t]{0.9\paperwidth}%
+        \begin{adjustwidth}{0cm}{0cm}%
+        \hypertarget{'''+book.lower() + str(chapter)+'''ref}{\\fontsize{15}{5}\selectfont \\textbf{''' + bib_dict[book] + ''' ''' + str(chapter) + ''' Reflection}} \\hfill \\hyperlink{'''+book.lower()+str(chapter)+'''}{Passage}
+        \medskip%
+        \hrule height 1pt
+        \end{adjustwidth}%
+    \end{minipage}
+    \\begin{minipage}[b]{\\textwidth}%
+        \\begin{adjustwidth}{0cm}{2.75cm}
+            \\Repeat{38}{\\myTodoLineGray}
+            \\vspace{5mm}
+        \end{adjustwidth}%
+    \\end{minipage}%
+    \\end{minipage}%
+}
+}
+\hspace{2cm}
+'''
     return text

@@ -1,0 +1,30 @@
+\documentclass[10pt]{extarticle}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
+\usepackage{changepage}
+\usepackage{background}
+\usepackage{lipsum}
+\usepackage{showframe}
+\usepackage{booktabs}
+
+\geometry{paperwidth=15.6cm, paperheight=20.9cm}
+\geometry{
+  top=1.4cm,
+  bottom=0.7cm,
+  left=2cm,
+  right=2.75cm
+}
+
+\begin{document}
+\lipsum[1]
+
+\noindent
+\begin{tabularx}{\linewidth}{|*{12}{X}|}
+    \hline
+    0  & 2  & 4  & 6  & 8  & 10 & 12 & 14 & 16 & 18 & 20 & 22 \\
+    \hline
+\end{tabularx}
+
+\end{document}
