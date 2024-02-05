@@ -1,0 +1,44 @@
+\documentclass[11pt]{extarticle}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
+\usepackage{changepage}
+\usepackage{background}
+\usepackage{booktabs}
+% \usepackage{showframe}
+
+\geometry{paperwidth=15.6cm, paperheight=20.9cm}
+\geometry{
+  top=1.75cm,
+  bottom=0.7cm,
+  left=2cm,
+  right=4.75cm
+}
+
+\pagestyle{empty}
+\reversemarginpar
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash\hspace{0pt}}X}
+
+\parindent=0pt
+\fboxsep0pt
+
+
+\ExplSyntaxOn
+\cs_new_eq:NN \Repeat \prg_replicate:nn
+\ExplSyntaxOff
+
+
+\newlength{\myLenLineThicknessDefault}
+\newlength{\myLenLineHeightButLine}
+\setlength{\myLenLineThicknessDefault}{.4pt}
+\setlength{\myLenLineHeightButLine}{\dimexpr5mm-.4pt}
+
+\newcommand{\myMinLineHeight}[1]{\parbox{0pt}{\vskip#1}}
+\newcommand{\myColorGray}{gray}
+\newcommand{\myLinePlain}{\hrule width \linewidth height \myLenLineThicknessDefault}
+\newcommand{\myLineHeightButLine}{\myMinLineHeight{\myLenLineHeightButLine}}
+\newcommand{\myLineColor}[1]{\textcolor{#1}{\myLinePlain}}
+\newcommand{\myLineGray}{\myLineColor{\myColorGray}}
+\newcommand{\myTodoLineGray}{\myLineHeightButLine\myLineGray}

@@ -20,8 +20,12 @@ def write_book_margin(book):
     text += "\\begin{tabularx}{18.5cm}{*{21}{Y|}Y}%\n"
     for i, testbook in enumerate(bib_dict):
         if testbook == book:
-            text += "\t\\cellcolor{black}{\\textcolor{white}{"+testbook+"}}\n"
-            text += "\t&\n"
+            text += "\t\\cellcolor{black}{\\textcolor{white}{"+testbook+"}}"
+            if (i+1)%22==0:
+                text += "\\\\\hline\n"
+            else:
+                text += "\n\t&\n"
+
         elif i == len(bib_dict)-1:
             text += "\t\\hyperlink{dummy}{REV}%\n"
         elif (i+1)%22==0:
@@ -72,14 +76,15 @@ contents={
 # Chapterbar writer
 def write_chapterbar(translation, book, chapter):
     chapterlimit = getNChapters(translation, book) + 1
+    ncolumns = min(11, chapterlimit-1)
     text = ""
-    text += "\\begin{tabularx}{\\linewidth}{|*{11}{X}|}\n\\hline\n"
+    text += "\\begin{tabularx}{\\linewidth}{|*{"+str(ncolumns)+"}{X}|}\n\\hline\n"
     # Calculate the start and end values for the range
-    start = max(1, chapter - 5)
-    end = start + 11
+    start = max(1, chapter - int(ncolumns/2))
+    end = start + ncolumns
     if end > chapterlimit:
         end = chapterlimit
-        start = end - 11
+        start = end - ncolumns
     
     # Create the range of integers
     chapter_range = range(start, end) 
@@ -106,22 +111,6 @@ def write_text(translation, book, chapter):
             text+=verse['text']+"\n"
         else:
             text+="$^{"+str(i+1)+"}$ "+verse['text']+"\n"
-    return text
-
-def write_tex_main(translation, book):
-    nchapters = getNChapters(translation, book)
-    text = ""
-    text += "\\include{preamble}\n\n"
-    text += "\\begin{document}\n\n"
-    for i in range(1, nchapters+1):
-        text += write_bookChapter(book, i)
-
-    for i in range(1, nchapters+1):
-        text += "\\input{"+book.lower()+""+str(i)+"_reflection}\n\n"
-        text += "\\newpage\n"
-
-    text += "\\end{document}"
-    
     return text
 
 def write_reflection_page(book, chapter):
@@ -155,4 +144,24 @@ contents={
 }
 \hspace{2cm}
 '''
+    return text
+
+def write_tex_main(translation):
+    text = ""
+    text += "\\include{preamble}\n\n"
+    text += "\\begin{document}\n\n"
+
+    for book in bib_dict:
+        nchapters = getNChapters(translation, book)
+        for i in range(1, nchapters+1):
+            text += write_bookChapter(book, i)
+
+    for book in bib_dict:
+        nchapters = getNChapters(translation, book)
+        for i in range(1, nchapters+1):
+            text += "\\input{"+book.lower()+""+str(i)+"_reflection}\n\n"
+            text += "\\newpage\n"
+
+    text += "\\end{document}"
+        
     return text

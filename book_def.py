@@ -62,5 +62,5 @@ bib_dict = {"GEN": "Genesis",
 "1JN": "1 John",
 "2JN": "2 John",
 "3JN": "3 John",
-"JUE": "Jude",
+"JUD": "Jude",
 "REV": "Revelation"}
