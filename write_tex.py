@@ -27,11 +27,11 @@ def write_book_margin(book):
                 text += "\n\t&\n"
 
         elif i == len(bib_dict)-1:
-            text += "\t\\hyperlink{dummy}{REV}%\n"
+            text += "\t\\hyperlink{rev1}{REV}%\n"
         elif (i+1)%22==0:
-            text += "\t\\hyperlink{dummy}{"+testbook+"}\\\\\hline\n"
+            text += "\t\\hyperlink{"+testbook.lower()+"1}{"+testbook+"}\\\\\hline\n"
         else:
-            text += "\t\\hyperlink{dummy}{" + testbook + "}\n"
+            text += "\t\\hyperlink{"+testbook.lower()+"1}{" + testbook + "}\n"
             text += "\t&\n"
     
     text += "\\end{tabularx}%\n}%\n}%"
@@ -150,6 +150,10 @@ def write_tex_main(translation):
     text = ""
     text += "\\include{preamble}\n\n"
     text += "\\begin{document}\n\n"
+
+    text += r'''\hspace{0pt}\vfil
+\hfill\resizebox{.7\linewidth}{!}{'''+translation+r'''}%
+\pagebreak'''
 
     for book in bib_dict:
         nchapters = getNChapters(translation, book)
